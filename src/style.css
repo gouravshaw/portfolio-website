@@ -115,6 +115,9 @@ html::-webkit-scrollbar-thumb:hover {
 body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 .skip-link {
@@ -788,7 +791,7 @@ button:focus-visible {
 /* ---------- CORE COMPETENCIES ---------- */
 .competencies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 1.5rem;
 }
 
@@ -1307,6 +1310,209 @@ button:focus-visible {
   .hero-cta {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .hero-section {
+    padding: 6rem 0 3rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero-stats li {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 1rem;
+  }
+
+  .hero-role {
+    font-size: 1.2rem;
+  }
+
+  .competencies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comp-card {
+    padding: 1.75rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .about-lead {
+    font-size: 1.3rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .col-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .exp-title {
+    font-size: 1.2rem;
+  }
+
+  .exp-company {
+    font-size: 1rem;
+  }
+
+  .mindset-grid.dual-columns {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .terminal-body {
+    font-size: 0.72rem;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+  }
+
+  .hero-role {
+    font-size: 1.1rem;
+  }
+
+  .hero-greeting {
+    font-size: 0.95rem;
+  }
+
+  .navbar {
+    padding: 1rem 1rem;
+  }
+
+  .navbar.scrolled {
+    padding: 0.75rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 1.65rem;
+  }
+
+  .section-tag {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 0.7rem 1.25rem;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-large {
+    padding: 0.85rem 1.5rem;
+  }
+
+  .hero-badge {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .profile-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .terminal-json p {
+    font-size: 0.68rem;
+  }
+
+  .project-header h3 {
+    font-size: 1.15rem;
+  }
+
+  .project-content p {
+    font-size: 0.88rem;
+  }
+
+  .contact-text {
+    font-size: 0.95rem;
+  }
+
+  .exp-row {
+    padding: 1.25rem;
+  }
+
+  .credential-item {
+    padding: 1rem 1.25rem;
+  }
+}
+
+/* iOS safe-area insets for notched devices */
+@supports (padding: max(0px)) {
+  .navbar {
+    padding-left: max(1.5rem, env(safe-area-inset-left));
+    padding-right: max(1.5rem, env(safe-area-inset-right));
+  }
+  .container {
+    padding-left: max(1.5rem, env(safe-area-inset-left));
+    padding-right: max(1.5rem, env(safe-area-inset-right));
+  }
+  .footer {
+    padding-bottom: max(2rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* Prevent sticky hover on touch-only devices */
+@media (hover: none) {
+  .comp-card:hover,
+  .project-card:hover,
+  .exp-row:hover,
+  .credential-item:hover,
+  .social-link:hover,
+  .btn-primary:hover,
+  .btn-outline:hover {
+    transform: none;
+  }
+
+  .btn-primary:hover::before {
+    transform: none;
   }
 }
 
