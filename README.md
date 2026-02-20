@@ -52,4 +52,4 @@ Live at: [www.gouravshaw.com](http://www.gouravshaw.com)
 
 ## License
 
-© 2026 Gourav Shaw. All Rights Reserved.
+
