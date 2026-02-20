@@ -7,8 +7,10 @@ const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('is-visible');
-      // Optional: Stop observing once revealed
       revealObserver.unobserve(entry.target);
+      if (entry.target.classList.contains('hero-about')) {
+        startWhoamiTyping();
+      }
     }
   });
 }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
@@ -125,8 +127,11 @@ window.addEventListener('resize', () => {
 // ==========================================
 // WHOAMI TYPING ANIMATION
 // ==========================================
-const whoamiEl = document.getElementById('whoami-text');
-if (whoamiEl) {
+function startWhoamiTyping() {
+  const whoamiEl = document.getElementById('whoami-text');
+  if (!whoamiEl || whoamiEl.dataset.typed) return;
+  whoamiEl.dataset.typed = 'true';
+
   const parts = [
     { text: '$ ', className: 'cmd-prefix' },
     { text: 'whoami', className: 'gradient-text' }
@@ -134,15 +139,6 @@ if (whoamiEl) {
   let partIdx = 0;
   let charIdx = 0;
   let currentSpan = null;
-
-  const whoamiObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        whoamiObserver.unobserve(entry.target);
-        setTimeout(typeNext, 400);
-      }
-    });
-  }, { threshold: 0.3 });
 
   function typeNext() {
     if (partIdx >= parts.length) return;
@@ -159,8 +155,60 @@ if (whoamiEl) {
       charIdx = 0;
       currentSpan = null;
     }
-    setTimeout(typeNext, 100);
+    setTimeout(typeNext, 250);
   }
 
-  whoamiObserver.observe(whoamiEl.closest('.hero-about'));
+  setTimeout(typeNext, 600);
+}
+
+// ==========================================
+// TERMINAL TYPING ANIMATION
+// ==========================================
+function startTerminalTyping() {
+  const cmdEl = document.getElementById('terminal-cmd');
+  const outputEl = document.getElementById('terminal-output');
+  const prompt2El = document.getElementById('terminal-prompt2');
+  const cursorEl = document.getElementById('terminal-cursor');
+  if (!cmdEl || cmdEl.dataset.typed) return;
+  cmdEl.dataset.typed = 'true';
+
+  const command = 'cat profile.json';
+  let i = 0;
+
+  function typeCmd() {
+    if (i < command.length) {
+      cmdEl.textContent += command.charAt(i);
+      i++;
+      setTimeout(typeCmd, 80);
+    } else {
+      setTimeout(() => {
+        if (cursorEl) cursorEl.style.display = 'none';
+        if (outputEl) {
+          outputEl.style.display = 'block';
+          outputEl.style.animation = 'fadeIn 0.4s ease both';
+        }
+        setTimeout(() => {
+          if (prompt2El) {
+            prompt2El.style.display = 'block';
+            prompt2El.style.animation = 'fadeIn 0.3s ease both';
+          }
+        }, 400);
+      }, 300);
+    }
+  }
+
+  setTimeout(typeCmd, 800);
+}
+
+const heroTerminal = document.querySelector('.hero-terminal');
+if (heroTerminal) {
+  const termObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        termObserver.unobserve(entry.target);
+        startTerminalTyping();
+      }
+    });
+  }, { threshold: 0.3 });
+  termObserver.observe(heroTerminal);
 }

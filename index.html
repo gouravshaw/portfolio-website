@@ -85,9 +85,9 @@
                     <span class="terminal-ctrl terminal-close"></span>
                   </div>
                 </div>
-                <div class="terminal-body mono-font">
-                  <p class="terminal-line"><span class="terminal-user">gourav@cloud</span><span class="terminal-colon">:</span><span class="terminal-path">~</span><span class="terminal-dollar">$</span> cat profile.json</p>
-                  <div class="terminal-json">
+                <div class="terminal-body mono-font" id="terminal-anim">
+                  <p class="terminal-line"><span class="terminal-user">gourav@cloud</span><span class="terminal-colon">:</span><span class="terminal-path">~</span><span class="terminal-dollar">$</span> <span id="terminal-cmd" class="terminal-typed-cmd"></span><span class="terminal-cursor" id="terminal-cursor"></span></p>
+                  <div class="terminal-json" id="terminal-output" style="display:none;">
                     <p>{</p>
                     <p>  <span class="json-key">"name"</span>: <span class="json-val">"Gourav Shaw"</span>,</p>
                     <p>  <span class="json-key">"role"</span>: <span class="json-val">"Cloud & DevOps"</span>,</p>
@@ -97,7 +97,7 @@
                     <p>  <span class="json-key">"status"</span>: <span class="json-val">"open to opportunities"</span></p>
                     <p>}</p>
                   </div>
-                  <p class="terminal-line"><span class="terminal-user">gourav@cloud</span><span class="terminal-colon">:</span><span class="terminal-path">~</span><span class="terminal-dollar">$</span> <span class="terminal-cursor"></span></p>
+                  <p class="terminal-line" id="terminal-prompt2" style="display:none;"><span class="terminal-user">gourav@cloud</span><span class="terminal-colon">:</span><span class="terminal-path">~</span><span class="terminal-dollar">$</span> <span class="terminal-cursor"></span></p>
                 </div>
               </div>
             </div>
@@ -157,8 +157,8 @@
                 <p class="institution">Microsoft Certified</p>
               </div>
               <div class="credential-item">
-                <h4>Verizon Cloud Platform Job Simulation</h4>
-                <p class="institution">Forage Professional Development</p>
+                <h4>Verizon Communications Inc. - Cloud Platform Job Simulation</h4>
+                <p class="institution">Forage • Issued Feb 2026</p>
               </div>
             </div>
           </div>
