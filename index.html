@@ -3,172 +3,77 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>G</text></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gourav Shaw | Cloud & DevOps Engineer</title>
+  <title>Gourav Shaw | Cloud & DevOps Professional</title>
   <meta name="description"
-    content="Gourav Shaw — Cloud & DevOps professional with 4+ years of experience in cloud automation, infrastructure, and software configuration management.">
+    content="Gourav Shaw - Cloud & DevOps professional with 5+ years in enterprise support, cloud infrastructure, and automation. AWS, Azure (AZ-900), GCP. MSc Cloud Computing (Distinction). Seeking UK opportunities.">
+  <meta property="og:title" content="Gourav Shaw | Cloud & DevOps Professional">
+  <meta property="og:description"
+    content="Cloud & DevOps professional with 5+ years across enterprise support, cloud infrastructure, and automation. AWS, Azure (AZ-900), GCP. MSc Cloud Computing (Distinction).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/profile.jpg">
+  <meta property="og:url" content="https://www.gouravshaw.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gourav Shaw | Cloud & DevOps Professional">
+  <meta name="twitter:description"
+    content="Cloud & DevOps professional with 5+ years across enterprise support, cloud infrastructure, and automation. AWS, Azure (AZ-900), GCP. MSc Cloud Computing (Distinction).">
+  <meta name="twitter:image" content="/profile.jpg">
   <!-- Premium Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 </head>
 
 <body>
-  <!-- Animated Background -->
-  <div class="bg-effects">
-    <div class="gradient-blob blob-1"></div>
-    <div class="gradient-blob blob-2"></div>
-    <div class="gradient-blob blob-3"></div>
-    <div class="grid-overlay"></div>
-  </div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <div id="app">
     <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-      <div class="logo">G<span class="logo-accent">.</span></div>
-      <ul class="nav-links">
-        <li><a href="#hero" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Work</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#certifications" class="nav-link">Certs</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+    <nav class="navbar" id="navbar" aria-label="Primary">
+      <div class="logo">Gourav<span class="logo-accent">.</span></div>
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="#hero" class="nav-link active"><span class="nav-num">01.</span> Home</a></li>
+        <li><a href="#about" class="nav-link"><span class="nav-num">02.</span> About</a></li>
+        <li><a href="#education" class="nav-link"><span class="nav-num">03.</span> Education</a></li>
+        <li><a href="#competencies" class="nav-link"><span class="nav-num">04.</span> Skills</a></li>
+        <li><a href="#experience" class="nav-link"><span class="nav-num">05.</span> Experience</a></li>
+        <li><a href="#projects" class="nav-link"><span class="nav-num">06.</span> Projects</a></li>
+        <li><a href="#mindset" class="nav-link"><span class="nav-num">07.</span> Mindset</a></li>
+        <li><a href="#contact" class="nav-link"><span class="nav-num">08.</span> Contact</a></li>
       </ul>
-      <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
     </nav>
 
-    <main>
-      <!-- Hero Section -->
+    <main id="main-content">
       <section id="hero" class="hero-section">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="badge-dot"></span>
-            Available for opportunities
-          </div>
-          <h1 class="hero-name">
-            <span class="line">Gourav</span>
-            <span class="line accent">Shaw<span class="cursor-blink">_</span></span>
-          </h1>
-          <h2 class="hero-title">
-            <span class="title-static">Cloud &</span>
-            <span class="title-dynamic" id="typingText"></span>
-          </h2>
-          <p class="hero-desc">Cloud and DevOps-focused professional with <strong>5+ years</strong> of experience across
-            IT infrastructure, cloud automation, and software configuration management.</p>
-          <div class="hero-cta">
-            <a href="#experience" class="btn-glow">
-              <span>Explore My Work</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </a>
-            <a href="#contact" class="btn-outline">Get in Touch</a>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
-              <span class="stat-label">Years Experience</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat">
-              <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
-              <span class="stat-label">Cloud Platforms</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat">
-              <span class="stat-number" data-count="4">0</span>
-              <span class="stat-label">Certifications</span>
-            </div>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="orbit-container">
-            <div class="orbit orbit-1">
-              <div class="orbit-dot" style="--delay: 0s;">☁️</div>
-            </div>
-            <div class="orbit orbit-2">
-              <div class="orbit-dot" style="--delay: 2s;">⚙️</div>
-            </div>
-            <div class="orbit orbit-3">
-              <div class="orbit-dot" style="--delay: 4s;">🚀</div>
-            </div>
-            <div class="orbit-center">
-              <span class="center-icon">DevOps</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section id="about" class="section">
         <div class="container">
-          <div class="section-header">
-            <span class="section-tag">01 / ABOUT</span>
-            <h2 class="section-title">Who I <span class="gradient-text">Am</span></h2>
-          </div>
-          <div class="about-grid">
-            <div class="about-text">
-              <p class="about-lead">I build and manage <span class="highlight">scalable cloud infrastructure</span>
-                that helps teams ship faster.</p>
-              <p>With 5+ years spanning IT infrastructure, cloud automation, and CI/CD pipelines, I bring a unique blend
-                of technical depth and business acumen to every project. Currently pursuing an <strong>MSc at Nottingham
-                  Trent University</strong>.</p>
-
-              <div class="tech-stack">
-                <h3 class="tech-title">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                    <path d="M2 17l10 5 10-5" />
-                    <path d="M2 12l10 5 10-5" />
-                  </svg>
-                  Tech Stack
-                </h3>
-                <div class="tech-tags">
-                  <span class="tag tag-cloud">AWS</span>
-                  <span class="tag tag-cloud">Azure</span>
-                  <span class="tag tag-cloud">GCP</span>
-                  <span class="tag tag-devops">Kubernetes</span>
-                  <span class="tag tag-devops">Terraform</span>
-                  <span class="tag tag-devops">Docker</span>
-                  <span class="tag tag-devops">CI/CD</span>
-                  <span class="tag tag-code">Python</span>
-                  <span class="tag tag-code">JavaScript</span>
-                  <span class="tag tag-code">Linux</span>
-                  <span class="tag tag-code">Shell</span>
-                </div>
-              </div>
-            </div>
-            <div class="about-visual">
-              <div class="terminal-card">
-                <div class="terminal-header">
-                  <div class="terminal-dots">
-                    <span class="td td-r"></span>
-                    <span class="td td-y"></span>
-                    <span class="td td-g"></span>
-                  </div>
-                  <span class="terminal-title">~/gourav</span>
-                </div>
-                <div class="terminal-body">
-                  <div class="terminal-line">
-                    <span class="prompt">$</span>
-                    <span class="cmd">cat profile.json</span>
-                  </div>
-                  <pre class="terminal-output">{
-  <span class="key">"name"</span>: <span class="val">"Gourav Shaw"</span>,
-  <span class="key">"role"</span>: <span class="val">"Cloud & DevOps"</span>,
-  <span class="key">"cloud"</span>: [<span class="val">"AWS"</span>, <span class="val">"Azure"</span>, <span class="val">"GCP"</span>],
-  <span class="key">"tools"</span>: [<span class="val">"Docker"</span>, <span class="val">"K8s"</span>, <span class="val">"Terraform"</span>],
-  <span class="key">"status"</span>: <span class="val">"shipping infra..."</span>
-}</pre>
-                  <div class="terminal-line">
-                    <span class="prompt">$</span>
-                    <span class="cmd cursor-blink">_</span>
-                  </div>
+          <div class="hero-content reveal">
+            <div class="hero-text-block">
+              <p class="hero-greeting">Hi, I'm</p>
+              <h1 class="hero-name title-font">
+                Gourav <span class="accent">Shaw</span>
+              </h1>
+              <p class="hero-role title-font">Cloud & DevOps Professional</p>
+              <p class="hero-title">Cloud and DevOps-focused professional with 5+ years across enterprise support, cloud infrastructure, and automation.</p>
+              <ul class="hero-stats" aria-label="Quick profile highlights">
+                <li><strong>5+ Years</strong> Enterprise support & cloud ops</li>
+                <li><strong>Multi-Cloud</strong> AWS, Azure (AZ-900), GCP</li>
+                <li><strong>MSc (Distinction)</strong> Cloud & Enterprise Computing</li>
+              </ul>
+              <div class="hero-cta">
+                <a href="#projects" class="btn-primary">
+                  View Projects
+                </a>
+                <a href="/GouravShawCV_Cloud.pdf" download="Gourav_Shaw_CV.pdf" class="btn-outline">Download CV</a>
+                <div class="hero-badge live-badge">
+                  <span class="badge-dot pulse-dot"></span>
+                  Available for UK Roles
                 </div>
               </div>
             </div>
@@ -176,246 +81,448 @@
         </div>
       </section>
 
-      <!-- Experience Section -->
+      <section id="about" class="section">
+        <div class="container border-top">
+          <div class="section-header reveal">
+            <span class="section-tag mono-font">02 // ABOUT</span>
+            <h2 class="section-title"><span class="mono-font cmd-prefix">$</span> <span class="gradient-text">whoami</span></h2>
+          </div>
+          <div class="about-grid dual-columns mt-4">
+            <div class="about-left reveal">
+              <div class="profile-container">
+                <img src="/profile.jpg" alt="Portrait of Gourav Shaw" class="profile-image" loading="lazy" decoding="async">
+              </div>
+              <div class="terminal-widget">
+                <div class="terminal-header">
+                  <span class="terminal-title mono-font">gourav@cloud:~</span>
+                  <div class="terminal-controls">
+                    <span class="terminal-ctrl terminal-minimize"></span>
+                    <span class="terminal-ctrl terminal-maximize"></span>
+                    <span class="terminal-ctrl terminal-close"></span>
+                  </div>
+                </div>
+                <div class="terminal-body mono-font">
+                  <p class="terminal-line"><span class="terminal-user">gourav@cloud</span><span class="terminal-colon">:</span><span class="terminal-path">~</span><span class="terminal-dollar">$</span> cat profile.json</p>
+                  <div class="terminal-json">
+                    <p>{</p>
+                    <p>  <span class="json-key">"name"</span>: <span class="json-val">"Gourav Shaw"</span>,</p>
+                    <p>  <span class="json-key">"role"</span>: <span class="json-val">"Cloud & DevOps"</span>,</p>
+                    <p>  <span class="json-key">"cloud"</span>: [<span class="json-val">"AWS"</span>, <span class="json-val">"Azure"</span>, <span class="json-val">"GCP"</span>],</p>
+                    <p>  <span class="json-key">"tools"</span>: [<span class="json-val">"Docker"</span>, <span class="json-val">"K8s"</span>, <span class="json-val">"Terraform"</span>],</p>
+                    <p>  <span class="json-key">"certs"</span>: [<span class="json-val">"AZ-900"</span>],</p>
+                    <p>  <span class="json-key">"status"</span>: <span class="json-val">"open to opportunities"</span></p>
+                    <p>}</p>
+                  </div>
+                  <p class="terminal-line"><span class="terminal-user">gourav@cloud</span><span class="terminal-colon">:</span><span class="terminal-path">~</span><span class="terminal-dollar">$</span> <span class="terminal-cursor"></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="about-text reveal delay-1">
+              <p class="about-lead title-font" style="margin-bottom: 1.5rem;">From Supporting Systems to <span
+                  class="highlight">Building & Operating Them</span>.</p>
+              <p style="margin-bottom: 1rem; color: var(--text-secondary);">I began my career in enterprise technical
+                support, working with production systems, troubleshooting complex issues, and supporting real users in
+                live environments. Over time, I progressed into a Subject Matter Expert role where my responsibilities
+                grew beyond day-to-day support into handling escalations, working closely with engineering teams, and
+                contributing to automation and operational improvements.</p>
+              <p style="margin-bottom: 1rem; color: var(--text-secondary);">To move deeper into cloud engineering and
+                DevOps, I pursued an MSc in Cloud and Enterprise Computing, which I completed with Distinction at
+                Nottingham Trent University. Alongside my studies and internship experience, I developed hands-on skills
+                in cloud platforms, CI/CD pipelines, containerisation, monitoring, automation, and identity management.</p>
+              <p style="color: var(--text-secondary);">I am now seeking Cloud Support, Platform, or Junior DevOps
+                opportunities in the UK where I can apply my multi-cloud experience in operations, automation,
+                monitoring, and problem-solving to help build reliable, scalable, and well-operated cloud systems.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section alt-bg">
+        <div class="container border-top">
+          <div class="section-header mt-4 reveal">
+            <span class="section-tag mono-font">03 // CREDENTIALS</span>
+            <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
+          </div>
+
+          <div class="dual-columns">
+            <div class="col reveal delay-1">
+              <h3 class="col-title">Academic Background</h3>
+              <div class="credential-item">
+                <h4>MSc Cloud and Enterprise Computing</h4>
+                <p class="institution">Nottingham Trent University • <strong>Distinction Awarded</strong></p>
+              </div>
+              <div class="credential-item">
+                <h4>BSc (Computers, Physics, Maths)</h4>
+                <p class="institution">Panjab University • Completed</p>
+              </div>
+            </div>
+
+            <div class="col reveal delay-2">
+              <h3 class="col-title">Professional Certifications</h3>
+              <div class="credential-item">
+                <h4>Microsoft Azure Fundamentals (AZ-900)</h4>
+                <p class="institution">Microsoft Certified</p>
+              </div>
+              <div class="credential-item">
+                <h4>Verizon Cloud Platform Job Simulation</h4>
+                <p class="institution">Forage Professional Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="competencies" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag mono-font">04 // CAPABILITIES</span>
+            <h2 class="section-title">Core <span class="gradient-text">Competencies</span></h2>
+          </div>
+          <div class="competencies-grid">
+            <!-- Block 1 -->
+            <div class="comp-card reveal">
+              <h3>Cloud Platforms</h3>
+              <p>Hands-on across major cloud providers. Certified in Azure (AZ-900) with GCP internship and active AWS experience.</p>
+              <div class="comp-tags">
+                <span><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS</span>
+                <span><i class="devicon-azure-plain"></i> Microsoft Azure</span>
+                <span><i class="devicon-googlecloud-plain"></i> Google Cloud (GCP)</span>
+              </div>
+            </div>
+            <!-- Block 2 -->
+            <div class="comp-card reveal delay-1">
+              <h3>CI/CD & Automation</h3>
+              <p>Building pipelines that ensure reliable, repeatable deployments.</p>
+              <div class="comp-tags">
+                <span><i class="devicon-githubactions-plain"></i> GitHub Actions</span>
+                <span><i class="devicon-googlecloud-plain"></i> Cloud Build</span>
+                <span><i class="devicon-jenkins-line"></i> Jenkins</span>
+                <span><i class="devicon-python-plain"></i> Python</span>
+                <span><i class="devicon-bash-plain"></i> Bash</span>
+              </div>
+            </div>
+            <!-- Block 3 -->
+            <div class="comp-card reveal delay-2">
+              <h3>Containers & Orchestration</h3>
+              <p>Packaging applications and managing clustered workloads at scale.</p>
+              <div class="comp-tags">
+                <span><i class="devicon-docker-plain"></i> Docker</span>
+                <span><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+              </div>
+            </div>
+            <!-- Block 4 -->
+            <div class="comp-card reveal">
+              <h3>Monitoring & Observability</h3>
+              <p>Ensuring system health, metrics collection, and alerting workflows.</p>
+              <div class="comp-tags">
+                <span><i class="devicon-prometheus-original"></i> Prometheus</span>
+                <span><i class="devicon-grafana-plain"></i> Grafana</span>
+                <span><i class="devicon-amazonwebservices-plain-wordmark"></i> CloudWatch</span>
+                <span><i class="devicon-googlecloud-plain"></i> Cloud Monitoring</span>
+                <span><i class="devicon-splunk-original-wordmark"></i> Splunk</span>
+              </div>
+            </div>
+            <!-- Block 5 -->
+            <div class="comp-card reveal delay-1">
+              <h3>Infrastructure as Code</h3>
+              <p>Defining deterministic infrastructure deployments.</p>
+              <div class="comp-tags">
+                <span><i class="devicon-terraform-plain"></i> Terraform</span>
+                <span><i class="devicon-ansible-plain"></i> Ansible</span>
+                <span><i class="devicon-yaml-plain"></i> YAML</span>
+              </div>
+            </div>
+            <!-- Block 6 -->
+            <div class="comp-card reveal delay-2">
+              <h3>Enterprise Systems</h3>
+              <p>Identity and access management, IT governance, and structured enterprise operations.</p>
+              <div class="comp-tags">
+                <span><i class="devicon-windows11-original"></i> Active Directory</span>
+                <span><i class="devicon-amazonwebservices-plain-wordmark"></i> IAM</span>
+                <span><i class="devicon-linux-plain"></i> Linux</span>
+                <span><i class="devicon-networkx-original"></i> NAS/DAS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="experience" class="section">
         <div class="container">
-          <div class="section-header">
-            <span class="section-tag">02 / EXPERIENCE</span>
-            <h2 class="section-title">What I've <span class="gradient-text">Built</span></h2>
+          <div class="section-header reveal">
+            <span class="section-tag mono-font">05 // EXPERIENCE</span>
+            <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
           </div>
-          <div class="experience-grid">
-            <!-- Card 1 -->
-            <article class="exp-card" data-tilt>
-              <div class="exp-card-glow"></div>
-              <div class="exp-card-header">
-                <div class="exp-icon">
-                  <span>🎓</span>
-                </div>
-                <div class="exp-meta">
-                  <span class="exp-company">Nottingham Trent University</span>
-                  <span class="exp-date">Dec 2024 - May 2025</span>
-                </div>
+          <div class="experience-list pipeline-container">
+            <div class="pipeline-track line-growth"></div>
+
+            <article class="exp-row reveal">
+              <div class="exp-meta-side">
+                <span class="exp-date">Dec 2024 - May 2025</span>
+                <span class="exp-company">Nottingham Trent University</span>
               </div>
-              <h3 class="exp-title">Apprenticeships Support Admin</h3>
-              <ul class="exp-desc-list">
-                <li>Managed user accounts Active Directory, provisioning, deprovisioning, OU assignments, group
-                  policies.</li>
-                <li>Conducted account audits and troubleshot access issues, authentication errors, and account
-                  permissions.</li>
-                <li>Contributed to SOP documentation for onboarding workflows, access control, and user lifecycle
-                  processes.</li>
-              </ul>
-              <div class="exp-tags">
-                <span>Active Directory</span><span>IAM</span><span>SOPs</span>
+              <div class="exp-content-side">
+                <h3 class="exp-title">Apprenticeships Support Admin</h3>
+                <ul class="exp-desc-list">
+                  <li>Managed user accounts in Active Directory, including provisioning, deprovisioning, OU assignments, and
+                    group policies within a UK enterprise environment.</li>
+                  <li>Conducted account audits and troubleshot access issues, authentication errors, and account
+                    permissions to maintain system reliability.</li>
+                  <li>Contributed to SOP documentation for onboarding workflows, access control, and user lifecycle
+                    processes.</li>
+                </ul>
               </div>
             </article>
 
-            <!-- Card 2 -->
-            <article class="exp-card" data-tilt>
-              <div class="exp-card-glow"></div>
-              <div class="exp-card-header">
-                <div class="exp-icon">
-                  <span>☁️</span>
-                </div>
-                <div class="exp-meta">
-                  <span class="exp-company">Quote Kong</span>
-                  <span class="exp-date">May 2024 - Aug 2024</span>
-                </div>
+            <article class="exp-row reveal delay-1">
+              <div class="exp-meta-side">
+                <span class="exp-date">Sep 2024 - May 2025</span>
+                <span class="exp-company">Nottingham Trent University</span>
               </div>
-              <h3 class="exp-title">DevOps Engineer Intern</h3>
-              <ul class="exp-desc-list">
-                <li>Automated alerts using Python and YAML, integrating with Slack and email for incident response.</li>
-                <li>Created dashboards for monitoring service account activities and server performance.</li>
-                <li>Enhanced CI/CD pipelines with Cloud Build and GitHub Actions.</li>
-                <li>Hands-on experience with GCP, focusing on SRE logging, monitoring, and error reporting.</li>
-              </ul>
-              <div class="exp-tags">
-                <span>GCP</span><span>CI/CD</span><span>Python</span><span>GitHub Actions</span>
+              <div class="exp-content-side">
+                <h3 class="exp-title">Utilisation Survey Assistant</h3>
+                <ul class="exp-desc-list">
+                  <li>Conducted structured data collection of real-time teaching resource utilisation to support
+                    strategic resource planning.</li>
+                  <li>Analysed data using digital tools to identify inefficiencies and areas for improvement across
+                    departments.</li>
+                  <li>Delivered actionable insights through weekly reports to the Estates team, directly supporting
+                    data-driven decisions on space optimisation and operational efficiency.</li>
+                </ul>
               </div>
             </article>
 
-            <!-- Card 3 -->
-            <article class="exp-card" data-tilt>
-              <div class="exp-card-glow"></div>
-              <div class="exp-card-header">
-                <div class="exp-icon">
-                  <span>⚙️</span>
-                </div>
-                <div class="exp-meta">
-                  <span class="exp-company">Teleperformance</span>
-                  <span class="exp-date">Jun 2021 - Aug 2023</span>
-                </div>
+            <article class="exp-row reveal delay-2">
+              <div class="exp-meta-side">
+                <span class="exp-date">May 2024 - Aug 2024</span>
+                <span class="exp-company">QuoteKong</span>
               </div>
-              <h3 class="exp-title">SME - Cloud Services</h3>
-              <ul class="exp-desc-list">
-                <li>Managed Azure cloud systems, including resource provisioning, monitoring, and optimizing CI/CD
-                  pipelines.</li>
-                <li>Deployed and monitored cloud services, leveraging DevOps practices to enhance development and
-                  operations efficiency.</li>
-                <li>Designed and deployed AI-powered chatbot to automate Level 1 FAQs and reduce Level 2 Tech Support
-                  workload by 40%.</li>
-                <li>Conducted UAT’s for new application features and firmware, ensuring alignment with business
-                  requirements.</li>
-                <li>Analyzed clients’ feedback and drove process improvement initiatives, leading to 23% increase in end
-                  user experience.</li>
-              </ul>
-              <div class="exp-tags">
-                <span>Azure</span><span>CI/CD</span><span>UAT</span><span>Automation</span>
+              <div class="exp-content-side">
+                <h3 class="exp-title">DevOps Engineer Intern</h3>
+                <ul class="exp-desc-list">
+                  <li>Contributed to GCP-based monitoring and alerting, automating incident detection and response
+                    workflows using Python, YAML, and Slack integrations.</li>
+                  <li>Optimised CI/CD pipelines using GitHub Actions and Cloud Build, improving deployment reliability
+                    and reducing manual intervention.</li>
+                  <li>Developed centralised dashboards to improve system visibility, tracking service account activities
+                    and server performance metrics.</li>
+                  <li>Gained hands-on experience with Google Cloud Platform and SRE practices including structured
+                    logging, monitoring, and error reporting.</li>
+                </ul>
               </div>
             </article>
 
-            <!-- Card 4 -->
-            <article class="exp-card" data-tilt>
-              <div class="exp-card-glow"></div>
-              <div class="exp-card-header">
-                <div class="exp-icon">
-                  <span>💾</span>
-                </div>
-                <div class="exp-meta">
-                  <span class="exp-company">Teleperformance</span>
-                  <span class="exp-date">Sep 2019 - Jun 2021</span>
-                </div>
+            <article class="exp-row reveal delay-3">
+              <div class="exp-meta-side">
+                <span class="exp-date">Jun 2021 - Aug 2023</span>
+                <span class="exp-company">Teleperformance</span>
               </div>
-              <h3 class="exp-title">Lead Tech Support Associate</h3>
-              <ul class="exp-desc-list">
-                <li>Provided advanced tech support for Western Digital storage solutions to clients based in NA & EMEA.
-                </li>
-                <li>Led troubleshooting for NAS server configurations and cloud storage systems for optimal performance
-                  and security.</li>
-                <li>Trained and mentored junior staff, enhancing team efficiency and service quality.</li>
-              </ul>
-              <div class="exp-tags">
-                <span>NAS</span><span>Cloud Storage</span><span>Troubleshooting</span>
+              <div class="exp-content-side">
+                <h3 class="exp-title">Subject Matter Expert - Cloud Services</h3>
+                <ul class="exp-desc-list">
+                  <li>Provided enterprise technical support for storage and cloud platforms, handling complex
+                    troubleshooting across NAS systems, iSCSI configurations, and network storage environments.</li>
+                  <li>Acted as a domain specialist for cloud storage and NAS, supporting system configuration,
+                    performance tuning, and optimisation in collaboration with engineering teams.</li>
+                  <li>Supported cloud infrastructure and deployment workflows, contributing to resource provisioning,
+                    monitoring, and CI/CD-related improvements under established platform and security guidelines.</li>
+                  <li>Worked closely with DevOps and engineering teams to improve build, testing, and deployment
+                    processes, focusing on automation and operational efficiency.</li>
+                  <li>Led firmware testing and validation for new and existing storage products, ensuring stability,
+                    reliability, and readiness for production use.</li>
+                  <li>Supported monitoring and operational visibility for cloud services, helping improve incident
+                    detection, response, and overall system reliability.</li>
+                  <li>Designed and implemented automation solutions, including internal chatbots and email automation,
+                    reducing L2 support workload by 40% and improving response times.</li>
+                  <li>Conducted User Acceptance Testing (UAT) for application features and firmware releases, validating
+                    functionality, usability, and performance against business requirements.</li>
+                  <li>Collaborated with product and engineering teams to resolve recurring issues and drive process
+                    improvements, contributing to a 23% improvement in end-user experience.</li>
+                </ul>
               </div>
             </article>
+
+            <article class="exp-row reveal delay-4">
+              <div class="exp-meta-side">
+                <span class="exp-date">Sep 2019 - Jun 2021</span>
+                <span class="exp-company">Teleperformance</span>
+              </div>
+              <div class="exp-content-side">
+                <h3 class="exp-title">Lead Tech Support Associate</h3>
+                <ul class="exp-desc-list">
+                  <li>Delivered advanced technical support for Western Digital storage products, including HDDs, SSDs,
+                    NAS, cloud storage, and enterprise-grade HGST, G Technology, and SanDisk Professional solutions.</li>
+                  <li>Specialised in diagnosing complex hardware and software issues such as synchronisation problems,
+                    firmware updates, account management, data recovery, and system configuration.</li>
+                  <li>Managed and supported cloud storage services, addressing synchronisation issues, account setup,
+                    and data access to ensure seamless integration and optimal performance.</li>
+                  <li>Provided detailed guidance on data recovery, drive configuration, firmware updates, and best
+                    practices for cloud storage and physical drives to ensure data protection and system reliability.</li>
+                  <li>Collaborated with engineering and product teams to relay customer feedback, driving improvements
+                    and the development of robust, user-friendly solutions.</li>
+                  <li>Developed and maintained extensive support documentation, including knowledge base articles,
+                    technical guides, and troubleshooting playbooks to streamline support processes.</li>
+                  <li>Trained and mentored junior support staff, imparting advanced technical knowledge and best
+                    practices to enhance team performance and service quality.</li>
+                  <li>Handled high-priority escalations, using in-depth expertise in HGST, G Technology, and SanDisk
+                    Professional products to deliver prompt and effective resolutions.</li>
+                  <li>Analysed customer feedback and support metrics to identify trends, recommend improvements, and
+                    increase first-contact resolution rates and overall customer satisfaction.</li>
+                </ul>
+              </div>
+            </article>
+
           </div>
         </div>
       </section>
 
-      <!-- Education Section -->
-      <section id="education" class="section">
+      <section id="projects" class="section">
         <div class="container">
-          <div class="section-header">
-            <span class="section-tag">03 / EDUCATION</span>
-            <h2 class="section-title">Academic <span class="gradient-text">Background</span></h2>
+          <div class="section-header reveal">
+            <span class="section-tag mono-font">06 // IMPLEMENTATION</span>
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
           </div>
-          <div class="certs-grid">
-            <div class="cert-card">
-              <div class="cert-badge">🎓</div>
-              <div class="cert-info">
-                <h3>MSc — Nottingham Trent University</h3>
-                <p>Cloud and Enterprise Computing</p>
-                <span class="cert-status">Distinction</span>
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card structured-card reveal">
+              <div class="project-header">
+                <h3>Automated Infrastructure Provisioning & CI/CD</h3>
+                <a href="https://github.com/gouravshaw" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="View project on GitHub">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                  </svg>
+                </a>
+              </div>
+              <div class="project-content" style="margin-bottom: 1.5rem;">
+                <p style="margin-bottom: 0.5rem;"><strong>Problem:</strong> Manual infrastructure setup was prone to
+                  configuration drift and delayed deployment cycles.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Architecture:</strong> Containerized multi-tier application
+                  deployed on AWS with immutable infrastructure design.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Infrastructure as Code:</strong> Terraform modules managing
+                  AWS VPCs, subnets, and EKS clusters.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>CI/CD Pipeline:</strong> GitHub Actions triggering unit tests
+                  and pushing Docker images to Amazon ECR.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Monitoring/Logging:</strong> Prometheus and Grafana with
+                  CloudWatch integration for alerting.</p>
+                <div class="project-tags">
+                  <span>AWS</span>
+                  <span>EKS</span>
+                  <span>Terraform</span>
+                  <span>GitHub Actions</span>
+                  <span>Docker</span>
+                  <span>Prometheus</span>
+                  <span>Grafana</span>
+                </div>
               </div>
             </div>
-            <div class="cert-card">
-              <div class="cert-badge">🎓</div>
-              <div class="cert-info">
-                <h3>BSc — Panjab University</h3>
-                <p>Computers, Physics, Maths</p>
-                <span class="cert-status">Completed</span>
+
+            <!-- Project 2 -->
+            <div class="project-card structured-card reveal delay-1">
+              <div class="project-header">
+                <h3>Cloud-Native Log Aggregation System</h3>
+                <a href="https://github.com/gouravshaw" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="View project on GitHub">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                  </svg>
+                </a>
+              </div>
+              <div class="project-content" style="margin-bottom: 1.5rem;">
+                <p style="margin-bottom: 0.5rem;"><strong>Problem:</strong> Lack of centralized visibility into
+                  application logs made debugging production incidents slow.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Architecture:</strong> Disparate log forwarders aggregating
+                  application data into a centralized ingestion pipeline mapped to a dashboarding tool.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Infrastructure as Code:</strong> Automated via Python scripts
+                  managing cloud resources.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>CI/CD Pipeline:</strong> Cloud Build pipeline deploying log
+                  forwarder updates seamlessly.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Monitoring/Logging:</strong> Integrated with Slack via Python
+                  scripts for immediate incident response.</p>
+                <div class="project-tags">
+                  <span>GCP</span>
+                  <span>Python</span>
+                  <span>Cloud Monitoring</span>
+                  <span>Slack Webhooks</span>
+                  <span>Cloud Build</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Certifications Section -->
-      <section id="certifications" class="section">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-tag">04 / CREDENTIALS</span>
-            <h2 class="section-title">Professional <span class="gradient-text">Certifications</span></h2>
+      <section id="mindset" class="section alt-bg">
+        <div class="container border-top">
+          <div class="section-header reveal">
+            <span class="section-tag mono-font">07 // PHILOSOPHY</span>
+            <h2 class="section-title">How I Approach <span class="gradient-text">Production Systems</span></h2>
           </div>
-          <div class="certs-grid">
-            <div class="cert-card">
-              <div class="cert-badge">☁️</div>
-              <div class="cert-info">
-                <h3>Microsoft Azure Fundamentals</h3>
-                <p>AZ-900 Certified</p>
-                <span class="cert-status verified">Verified</span>
+          <div class="mindset-grid dual-columns mt-4 reveal delay-1">
+            <div class="mindset-intro">
+              <p class="about-lead title-font">Building reliable systems requires more than tools. It requires
+                discipline.</p>
+              <div class="metrics-widget mt-4" style="max-width: 400px;">
+                <div class="widget-title mono-font">System Reliability Trend</div>
+                <svg class="line-chart" viewBox="0 0 300 100" preserveAspectRatio="none">
+                  <line x1="0" y1="25" x2="300" y2="25" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                  <line x1="0" y1="50" x2="300" y2="50" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                  <line x1="0" y1="75" x2="300" y2="75" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                  <path d="M0 90 L30 80 L60 85 L90 50 L120 70 L150 40 L180 45 L210 20 L240 30 L270 10 L300 15"
+                    fill="none" stroke="var(--accent-secondary)" stroke-width="2" class="anim-line" />
+                  <path
+                    d="M0 90 L30 80 L60 85 L90 50 L120 70 L150 40 L180 45 L210 20 L240 30 L270 10 L300 15 L300 100 L0 100 Z"
+                    fill="url(#chartGrad)" opacity="0.2" />
+                  <defs>
+                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="var(--accent-secondary)" />
+                      <stop offset="100%" stop-color="transparent" />
+                    </linearGradient>
+                  </defs>
+                </svg>
               </div>
             </div>
-            <div class="cert-card">
-              <div class="cert-badge">💼</div>
-              <div class="cert-info">
-                <h3>Verizon Cloud Platform Job Simulation</h3>
-                <p>Forage</p>
-                <span class="cert-status verified">Verified</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonial Section -->
-      <section class="section testimonial-section">
-        <div class="container">
-          <div class="section-header center">
-            <span class="section-tag">05 / TESTIMONIAL</span>
-            <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
-          </div>
-          <div class="testimonial-card">
-            <div class="quote-mark">"</div>
-            <blockquote>
-              <p>Gourav was a delight to work with — punctual, a self-starter, and a hard worker. He consistently
-                exceeded expectations during his time with us.</p>
-            </blockquote>
-            <div class="testimonial-author">
-              <div class="author-avatar">NS</div>
-              <div class="author-info">
-                <p class="author-name">Nate Seiling</p>
-                <p class="author-role">Manager, Quote Kong</p>
-              </div>
+            <div class="mindset-points">
+              <ul class="mindset-list">
+                <li><strong>Automation Over Manual Tasks:</strong> If I do it twice, I script it.</li>
+                <li><strong>Monitoring-First Approach:</strong> Systems must be observable prior to production.</li>
+                <li><strong>Infrastructure as Code:</strong> Immutable and version-controlled infrastructure.</li>
+                <li><strong>Security & Least Privilege:</strong> Secure by design, not as an afterthought.</li>
+                <li><strong>Documentation & SOPs:</strong> Clear runbooks for sustainable operations.</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Contact Section -->
       <section id="contact" class="section contact-section">
         <div class="container">
-          <div class="section-header center">
-            <span class="section-tag">06 / CONTACT</span>
-            <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+          <div class="section-header center reveal">
+            <span class="section-tag mono-font">08 // CONNECT</span>
+            <h2 class="section-title">Open to <span class="gradient-text">Opportunities</span></h2>
           </div>
-          <div class="contact-content">
-            <p class="contact-text">I'm currently seeking opportunities in Cloud & DevOps Engineering. If you're looking
-              for someone to build and manage robust cloud infrastructure, let's connect.</p>
-            <a href="mailto:contact@gouravshaw.com" class="btn-glow btn-large">
-              <span>Say Hello</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>
+          <div class="contact-content reveal delay-1">
+            <p class="contact-text">I am actively seeking Cloud Support, Platform, or Junior DevOps opportunities in the
+              UK. If your team values operational awareness, hands-on cloud experience, and an automation-first mindset,
+              I would welcome a conversation.</p>
+            <a href="mailto:contact@gouravshaw.com" class="btn-primary btn-large">
+              Send Email
             </a>
 
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/iamgshaw/" target="_blank" class="social-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
-                LinkedIn
-              </a>
-              <a href="https://github.com/gouravshaw" target="_blank" class="social-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                </svg>
-                GitHub
-              </a>
+            <div class="social-links mt-3">
+              <a href="https://www.linkedin.com/in/iamgshaw/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+              <span class="divider">|</span>
+              <a href="https://github.com/gouravshaw" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Footer -->
       <footer class="footer">
         <div class="container">
           <div class="footer-content">
             <span class="footer-logo">G<span class="logo-accent">.</span></span>
-            <p>&copy; 2026 Gourav Shaw. Built with passion.</p>
+            <p>&copy; 2026 Gourav Shaw. Production-Focused Infrastructure.</p>
           </div>
         </div>
       </footer>
