@@ -23,7 +23,15 @@ document.querySelectorAll('.reveal').forEach(el => {
 // ==========================================
 const pipelineContainer = document.querySelector('.pipeline-container');
 if (pipelineContainer) {
-  revealObserver.observe(pipelineContainer);
+  const pipelineObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        pipelineObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+  pipelineObserver.observe(pipelineContainer);
 }
 
 
@@ -113,3 +121,46 @@ window.addEventListener('resize', () => {
     if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
   }
 });
+
+// ==========================================
+// WHOAMI TYPING ANIMATION
+// ==========================================
+const whoamiEl = document.getElementById('whoami-text');
+if (whoamiEl) {
+  const parts = [
+    { text: '$ ', className: 'cmd-prefix' },
+    { text: 'whoami', className: 'gradient-text' }
+  ];
+  let partIdx = 0;
+  let charIdx = 0;
+  let currentSpan = null;
+
+  const whoamiObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        whoamiObserver.unobserve(entry.target);
+        setTimeout(typeNext, 400);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  function typeNext() {
+    if (partIdx >= parts.length) return;
+    const part = parts[partIdx];
+    if (!currentSpan) {
+      currentSpan = document.createElement('span');
+      currentSpan.className = part.className;
+      whoamiEl.appendChild(currentSpan);
+    }
+    currentSpan.textContent += part.text.charAt(charIdx);
+    charIdx++;
+    if (charIdx >= part.text.length) {
+      partIdx++;
+      charIdx = 0;
+      currentSpan = null;
+    }
+    setTimeout(typeNext, 100);
+  }
+
+  whoamiObserver.observe(whoamiEl.closest('.hero-about'));
+}
