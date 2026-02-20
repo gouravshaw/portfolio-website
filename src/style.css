@@ -428,6 +428,25 @@ button:focus-visible {
   text-align: left;
 }
 
+.hero-split {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-terminal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-terminal .terminal-widget {
+  width: 100%;
+  max-width: 480px;
+}
+
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -1102,6 +1121,33 @@ button:focus-visible {
   font-weight: bold;
 }
 
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.exp-tags span {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.72rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--accent-secondary);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.exp-tags span:hover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
 /* ---------- DUAL COLUMNS (EDUCATION / CERTS) ---------- */
 .dual-columns {
   display: grid;
@@ -1262,6 +1308,19 @@ button:focus-visible {
 }
 
 @media (max-width: 768px) {
+  .hero-split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-terminal {
+    justify-content: flex-start;
+  }
+
+  .hero-terminal .terminal-widget {
+    max-width: 100%;
+  }
+
   .hero-name {
     font-size: 3.5rem;
   }
@@ -1570,6 +1629,10 @@ button:focus-visible {
 
 .hero-content.is-visible .hero-cta {
   animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
+}
+
+.hero-content.is-visible .hero-terminal {
+  animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
 }
 
 @keyframes fadeSlideUp {
