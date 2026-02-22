@@ -991,6 +991,10 @@ button:focus-visible {
   --project-color: var(--accent-amber);
 }
 
+.project-card:nth-child(3) {
+  --project-color: var(--accent-violet);
+}
+
 .project-card::before {
   content: '';
   position: absolute;
